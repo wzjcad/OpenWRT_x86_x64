@@ -11,6 +11,13 @@ name: x86-x64-全插件
 on:
   repository_dispatch:
   workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'true'
+  #repository_dispatch:
+  #workflow_dispatch:
   # schedule:
     # - cron: 0 17 * * *
   # watch:
